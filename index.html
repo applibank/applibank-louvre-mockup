@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>株式会社アプリバンク｜建設業経営コンサル — Louvre v3 Mockup</title>
+<meta name="description" content="建設業の未来を切り拓く戦略パートナー。統合最適化（人材育成 × DX推進 × 収益改善）。">
+<meta name="hallmark-stamp" content="macrostructure: marquee-hero + long-document · genre: editorial · design-system: louvre-v3">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+/* Hallmark · macrostructure: marquee-hero+long-document · genre: editorial · design-system: louvre-v3 */
+:root {
+  --color-paper:      #fafaf7;
+  --color-paper-2:    #f0eee5;
+  --color-ink:        #1a1a1a;
+  --color-ink-2:      #4a4a4a;
+  --color-ink-3:      #8a8a8a;
+  --color-rule:       #c0c0c0;
+  --color-accent:     #8a6a3a;
+  --color-accent-bright: #b8860b;
+  --font-display: "Shippori Mincho", "Yu Mincho", "YuMincho", serif;
+  --font-body:    "Noto Sans JP", "Yu Gothic UI", sans-serif;
+  --space-xs:  0.5rem;
+  --space-sm:  1rem;
+  --space-md:  2rem;
+  --space-lg:  4rem;
+  --space-xl:  6rem;
+  --space-2xl: 9rem;
+  --max-w: 1180px;
+  --col-w: 720px;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--color-paper); color: var(--color-ink); }
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.85;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; cursor: pointer; }
+
+/* Mockup banner */
+.mockup-banner {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  padding: 0.5rem 1.5rem;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  font-family: var(--font-body);
+}
+.mockup-banner b { color: var(--color-accent-bright); font-weight: 700; }
+
+/* === Navigation: Newspaper Masthead (N4) === */
+.masthead {
+  border-bottom: 1px solid var(--color-ink);
+  background: var(--color-paper);
+}
+.masthead-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: var(--space-md) 1.5rem var(--space-sm);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.masthead-brand {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+}
+.masthead-brand .en {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  font-weight: 400;
+  color: var(--color-ink-3);
+  margin-top: 4px;
+  text-transform: uppercase;
+  font-family: var(--font-body);
+}
+.masthead-meta {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--color-ink-3);
+  letter-spacing: 0.05em;
+  text-align: right;
+  line-height: 1.6;
+}
+.masthead-nav {
+  border-top: 1px solid var(--color-rule);
+  border-bottom: 1px solid var(--color-rule);
+  background: var(--color-paper);
+}
+.masthead-nav-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  gap: 2.5rem;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  font-family: var(--font-display);
+  flex-wrap: wrap;
+}
+.masthead-nav-inner a {
+  position: relative;
+  padding: 0.25rem 0;
+  transition: color 0.2s;
+}
+.masthead-nav-inner a:hover { color: var(--color-accent); }
+.masthead-nav-inner a.active { font-weight: 600; }
+
+/* === Hero: Marquee Hero (03) === */
+.hero {
+  padding: var(--space-2xl) 1.5rem var(--space-xl);
+  border-bottom: 1px solid var(--color-ink);
+  background: var(--color-paper);
+}
+.hero-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.hero-eyebrow {
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0 0 var(--space-md);
+  font-weight: 500;
+}
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 7vw, 5.5rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin: 0 0 var(--space-lg);
+  max-width: 14ch;
+}
+.hero h1 .accent-mark {
+  color: var(--color-accent);
+  font-weight: 700;
+}
+.hero-lede {
+  max-width: 38ch;
+  font-size: 17px;
+  line-height: 2.0;
+  color: var(--color-ink-2);
+  font-family: var(--font-body);
+  margin: 0 0 var(--space-lg);
+}
+.hero-meta {
+  display: flex;
+  gap: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-rule);
+  max-width: 600px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--color-ink-3);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.hero-meta dt { margin: 0 0 4px; font-size: 10px; }
+.hero-meta dd {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 28px;
+  color: var(--color-ink);
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
+/* === Method Section: Long Document (02) === */
+.method {
+  padding: var(--space-2xl) 1.5rem;
+  border-bottom: 1px solid var(--color-rule);
+}
+.method-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+.method-label {
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: 500;
+  position: sticky;
+  top: 2rem;
+}
+.method-body {
+  max-width: var(--col-w);
+}
+.method-body h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0 0 var(--space-lg);
+  letter-spacing: 0.01em;
+}
+.method-body p {
+  font-size: 17px;
+  line-height: 2.0;
+  margin: 0 0 var(--space-md);
+  color: var(--color-ink-2);
+}
+.method-body strong {
+  color: var(--color-ink);
+  font-weight: 500;
+  background: linear-gradient(transparent 62%, rgba(184,134,11,0.15) 62%, rgba(184,134,11,0.15) 88%, transparent 88%);
+  padding: 0 0.1em;
+}
+.method-triad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--color-rule);
+  margin: var(--space-lg) 0;
+  border: 1px solid var(--color-rule);
+}
+.method-triad-item {
+  background: var(--color-paper);
+  padding: var(--space-md);
+}
+.method-triad-item .num {
+  font-family: var(--font-display);
+  font-size: 14px;
+  color: var(--color-accent);
+  margin-bottom: var(--space-xs);
+  letter-spacing: 0.1em;
+}
+.method-triad-item h3 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 var(--space-xs);
+  letter-spacing: 0.02em;
+}
+.method-triad-item p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--color-ink-2);
+  margin: 0;
+}
+
+/* === Pain Points: Editorial list with hairlines === */
+.pain {
+  padding: var(--space-2xl) 1.5rem;
+  background: var(--color-paper-2);
+  border-bottom: 1px solid var(--color-ink);
+}
+.pain-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+.pain h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0;
+  letter-spacing: 0.02em;
+  max-width: 14ch;
+}
+.pain h2 .smaller {
+  display: block;
+  font-size: 0.55em;
+  color: var(--color-ink-3);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1em;
+}
+.pain ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--color-ink);
+}
+.pain li {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--color-rule);
+  align-items: baseline;
+}
+.pain li .num {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--color-accent);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+.pain li p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.9;
+  font-family: var(--font-body);
+  color: var(--color-ink);
+}
+.pain-cta {
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-ink);
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: var(--color-ink);
+}
+
+/* === Article List (instead of 3-card grid) === */
+.articles {
+  padding: var(--space-2xl) 1.5rem;
+  border-bottom: 1px solid var(--color-rule);
+}
+.articles-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.articles-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: var(--space-md);
+  border-bottom: 2px solid var(--color-ink);
+  margin-bottom: var(--space-lg);
+}
+.articles-head h2 {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+.articles-head .more {
+  font-family: var(--font-display);
+  font-size: 14px;
+  color: var(--color-accent);
+  letter-spacing: 0.1em;
+}
+.articles-head .more::after {
+  content: " →";
+  font-family: var(--font-body);
+}
+.article {
+  display: grid;
+  grid-template-columns: 120px 1fr 200px;
+  gap: var(--space-lg);
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--color-rule);
+  align-items: start;
+}
+.article:hover { background: var(--color-paper-2); transition: background 0.2s; }
+.article-date {
+  font-family: var(--font-display);
+  font-size: 14px;
+  color: var(--color-ink-3);
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+}
+.article-date .day {
+  display: block;
+  font-size: 28px;
+  color: var(--color-ink);
+  font-weight: 500;
+}
+.article h3 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.55;
+  margin: 0 0 var(--space-xs);
+  letter-spacing: 0.02em;
+}
+.article p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--color-ink-2);
+  line-height: 1.75;
+  font-family: var(--font-body);
+  max-width: 50ch;
+}
+.article .tag {
+  font-family: var(--font-body);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  margin-top: var(--space-xs);
+  display: inline-block;
+}
+.article-cat {
+  font-family: var(--font-display);
+  font-size: 13px;
+  color: var(--color-ink-2);
+  text-align: right;
+  letter-spacing: 0.05em;
+}
+
+/* === CTA Strip: Editorial single statement === */
+.cta-strip {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  padding: var(--space-xl) 1.5rem;
+}
+.cta-strip-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space-lg);
+  align-items: end;
+}
+.cta-strip h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+  line-height: 1.45;
+  margin: 0;
+  letter-spacing: 0.02em;
+  max-width: 18ch;
+}
+.cta-strip h2 em {
+  font-style: normal;
+  color: var(--color-accent-bright);
+}
+.cta-strip-action {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  font-family: var(--font-body);
+}
+.cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1.5rem;
+  border: 1px solid var(--color-paper);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: var(--color-paper);
+  transition: background 0.15s, color 0.15s;
+  font-family: var(--font-display);
+  font-weight: 500;
+}
+.cta-link:hover {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+.cta-link.solid {
+  background: var(--color-accent-bright);
+  border-color: var(--color-accent-bright);
+  color: var(--color-ink);
+  font-weight: 600;
+}
+.cta-link.solid:hover {
+  background: var(--color-paper);
+  border-color: var(--color-paper);
+}
+.cta-link::after {
+  content: "→";
+  margin-left: auto;
+}
+
+/* === Footer: Editorial letter close === */
+footer {
+  background: var(--color-paper);
+  padding: var(--space-xl) 1.5rem var(--space-lg);
+}
+.footer-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.footer-letter {
+  font-family: var(--font-display);
+  font-size: 17px;
+  line-height: 2.0;
+  color: var(--color-ink-2);
+  max-width: 56ch;
+  margin: 0 0 var(--space-lg);
+}
+.footer-letter p { margin: 0 0 var(--space-md); }
+.footer-letter .sig {
+  margin-top: var(--space-md);
+  font-size: 14px;
+  color: var(--color-ink);
+}
+.footer-letter .sig b {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+}
+.footer-meta {
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-rule);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-lg);
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--color-ink-3);
+  letter-spacing: 0.05em;
+  flex-wrap: wrap;
+}
+.footer-meta .copyright {
+  font-family: var(--font-display);
+  font-size: 13px;
+  color: var(--color-ink-2);
+}
+.footer-links {
+  display: flex;
+  gap: var(--space-md);
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .method-inner { grid-template-columns: 1fr; gap: var(--space-md); }
+  .method-label { position: static; }
+  .method-triad { grid-template-columns: 1fr; }
+  .pain-inner { grid-template-columns: 1fr; }
+  .article { grid-template-columns: 1fr; gap: var(--space-xs); }
+  .article-cat { text-align: left; }
+  .cta-strip-inner { grid-template-columns: 1fr; }
+  .hero-meta { flex-wrap: wrap; gap: var(--space-md); }
+  .footer-meta { flex-direction: column; align-items: flex-start; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+</style>
+</head>
+<body>
+
+<div class="mockup-banner">
+  <b>MOCKUP</b> · applibank.com Hallmark redesign · Louvre v3 準拠 · 2026-05-23 · CEO 承認用
+</div>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a href="/" class="masthead-brand">
+      株式会社アプリバンク
+      <span class="en">APPLIBANK · INC.</span>
+    </a>
+    <div class="masthead-meta">
+      建設業経営コンサルティング<br>
+      令和八年五月二十三日　第〇四七号
+    </div>
+  </div>
+  <nav class="masthead-nav">
+    <div class="masthead-nav-inner">
+      <a href="#" class="active">本紙</a>
+      <a href="#">統合最適化</a>
+      <a href="#">代表のことば</a>
+      <a href="#">論考</a>
+      <a href="#">著書</a>
+      <a href="#">無料相談</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">建設業 · 経営コンサルティング · 統合最適化</p>
+    <h1>その経営課題、<br><span class="accent-mark">統合最適化</span>で打ち破る。</h1>
+    <p class="hero-lede">
+      アプリバンクは、建設業界特有の経営課題に対し、豊富な現場経験と専門知識に基づく独自メソッドで根本解決へ導きます。貴社の持続可能な成長を、全力で伴走支援する戦略パートナー。
+    </p>
+    <dl class="hero-meta">
+      <div>
+        <dt>建設業経営支援</dt>
+        <dd>二十年</dd>
+      </div>
+      <div>
+        <dt>支援企業</dt>
+        <dd>百社以上</dd>
+      </div>
+      <div>
+        <dt>ゼネコン出身</dt>
+        <dd>大手三社経験</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<section class="method">
+  <div class="method-inner">
+    <div class="method-label">METHOD · 〇一</div>
+    <div class="method-body">
+      <h2>人材育成 × DX推進 × 収益改善。<br>三位一体の「統合最適化」。</h2>
+      <p>
+        建設業の経営課題は、一つの軸では解けません。人手不足を採用だけで解決しようとすれば、現場の生産性は置き去りになる。DXに投資しても、現場が動かなければ書類が増えるだけ。利益率を絞っても、人が辞めれば未来はない。
+      </p>
+      <p>
+        アプリバンクの<strong>統合最適化メソッド</strong>は、人材育成・DX推進・収益改善の三軸を同時に動かすことで、それぞれ単独では到達できない相乗効果を引き出します。建設業に特化した二十年の現場知見と、AI経営チームによる二十四時間稼働の支援体制が、貴社の構造的変化を可能にします。
+      </p>
+      <div class="method-triad">
+        <div class="method-triad-item">
+          <div class="num">〇一</div>
+          <h3>人材育成</h3>
+          <p>採用・定着・スキル可視化までを支援。職人が主役の現場で、若手が育つ仕組みを構築。</p>
+        </div>
+        <div class="method-triad-item">
+          <div class="num">〇二</div>
+          <h3>DX推進</h3>
+          <p>紙・Excel・FAXからの段階的移行。現場の職人が使える簡素なUIを最優先に設計。</p>
+        </div>
+        <div class="method-triad-item">
+          <div class="num">〇三</div>
+          <h3>収益改善</h3>
+          <p>案件別原価管理、データに基づく意思決定。短期と中期の双方で利益構造を組み替える。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pain">
+  <div class="pain-inner">
+    <h2>
+      <span class="smaller">社長、こんなお悩みを</span>
+      抱えていませんか。
+    </h2>
+    <div>
+      <ul>
+        <li>
+          <span class="num">一</span>
+          <p>慢性的な人手不足。若手の採用・定着が、何年も進まない。</p>
+        </li>
+        <li>
+          <span class="num">二</span>
+          <p>DXを進めたいが、何から手をつけてよいか分からない。</p>
+        </li>
+        <li>
+          <span class="num">三</span>
+          <p>競合は多いのに、利益率がなかなか改善しない。</p>
+        </li>
+        <li>
+          <span class="num">四</span>
+          <p>現場の生産性を上げたいが、具体的な方法が見つからない。</p>
+        </li>
+        <li>
+          <span class="num">五</span>
+          <p>そろそろ事業承継を考えたいが、相談相手がいない。</p>
+        </li>
+      </ul>
+      <p class="pain-cta">
+        一つでも当てはまったら、私たちにご相談ください。<br>解決の糸口は、必ず見つかります。
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="articles">
+  <div class="articles-inner">
+    <div class="articles-head">
+      <h2>論考 · 最新</h2>
+      <a href="#" class="more">論考一覧へ</a>
+    </div>
+    <article class="article">
+      <div class="article-date">
+        二〇二六年
+        <span class="day">四月二日</span>
+      </div>
+      <div>
+        <h3>建設業のBIM/CIM導入ガイド｜中小建設会社でも始められる生産性向上の第一歩</h3>
+        <p>大手ゼネコンが先行するBIM/CIMだが、中小建設会社にとっての現実解は何か。コストを抑えた段階的導入の手順を、現場経験者の視点で整理する。</p>
+        <span class="tag">DX · BIM/CIM</span>
+      </div>
+      <div class="article-cat">論考 · 技術</div>
+    </article>
+    <article class="article">
+      <div class="article-date">
+        二〇二六年
+        <span class="day">四月二日</span>
+      </div>
+      <div>
+        <h3>建設現場の安全管理DX｜IoT・AI・遠隔監視で労災事故を防ぐ最新技術</h3>
+        <p>労災事故ゼロを目指す現場で、IoTセンサーとAI監視がどう機能するか。導入のリアルなコスト感と、現場が嫌がらない運用設計について。</p>
+        <span class="tag">DX · 安全管理</span>
+      </div>
+      <div class="article-cat">論考 · 安全</div>
+    </article>
+    <article class="article">
+      <div class="article-date">
+        二〇二六年
+        <span class="day">四月二日</span>
+      </div>
+      <div>
+        <h3>建設業の働き方改革×DX｜二〇二四年問題後の勤怠管理・ペーパーレス・工期短縮</h3>
+        <p>働き方改革と現場効率は両立できる。実務寄りの DX 設計、勤怠管理と書類削減を起点に、工期短縮までを射程に入れる方法。</p>
+        <span class="tag">DX · 働き方改革</span>
+      </div>
+      <div class="article-cat">論考 · 経営</div>
+    </article>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <div class="cta-strip-inner">
+    <h2>建設業の未来、<em>一社で抱えなくていい。</em></h2>
+    <div class="cta-strip-action">
+      <a href="#" class="cta-link solid">無料相談を申し込む</a>
+      <a href="#" class="cta-link">統合最適化の詳細を読む</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-letter">
+      <p>
+        建設業は、社長一人の頭の中で経営を回す時代を、もう終わりにしてよい。<br>
+        専門家とAI経営チームが二十四時間、貴社の意思決定に伴走する。
+      </p>
+      <p>
+        現場の感覚と、データの厳密さを、両方持つこと。<br>
+        それが、私たちの提供価値です。
+      </p>
+      <div class="sig">
+        <b>佐藤 望</b>
+        代表取締役 · 株式会社アプリバンク
+      </div>
+    </div>
+    <div class="footer-meta">
+      <span class="copyright">© 株式会社アプリバンク · 二〇二六</span>
+      <div class="footer-links">
+        <a href="#">プライバシーポリシー</a>
+        <a href="#">特定商取引法に基づく表記</a>
+        <a href="#">お問い合わせ</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
