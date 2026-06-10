@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>株式会社アプリバンク｜建てる会社を、強くする。建設業専門の経営コンサルティング</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+/* Hallmark · macrostructure: Long Document (asymmetric mixed) · genre: modern-minimal
+ * theme: AppliBank corporate (teal #12B4B4 paper-light · ember accent · Zen Maru display)
+ * tone: 実直×モダン · audience: 建設業経営者 · enrichment: none (typography+CSS図版)
+ */
+:root{
+  --teal:#12B4B4;
+  --teal-dark:#0E9A9A;      /* 面・ボタン背景用 */
+  --teal-text:#0A7A7A;      /* 小サイズ文字用（コントラスト4.5:1+確保） */
+  --teal-pale:#E4F6F6;
+  --charcoal:#363636;
+  --ember:#F6B43C;          /* 焚き火オレンジ — 「火」のナラティブ軸 */
+  --white:#FFFFFF;
+  --ink:#2A2A2A;
+  --line:#D8E6E6;
+  --grey-mute:#767676;      /* 花火側の沈んだ文字 */
+  --grey-soft:#9A9A9A;
+  --grey-foot:#CFCFCF;      /* footer文字 */
+  --grey-foot-line:#4A4A4A;
+  --disp:'Zen Maru Gothic',sans-serif;
+  --body:'Noto Sans JP',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+html,body{overflow-x:clip}
+body{font-family:var(--body);color:var(--ink);background:var(--white);font-size:16px;line-height:1.9;letter-spacing:.02em}
+img{max-width:100%}
+a{color:var(--teal-text)}
+a:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+h1,h2,h3{overflow-wrap:anywhere;min-width:0}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* ===== セクション見出し（縦積み・rule付き） ===== */
+.axis{margin-bottom:30px}
+.axis h2{font-family:var(--disp);font-weight:900;font-size:32px;color:var(--charcoal);line-height:1.4;padding-top:14px;border-top:4px solid var(--teal);display:inline-block}
+
+/* ===== Header ===== */
+header{position:sticky;top:0;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);z-index:50}
+.hd{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:var(--disp);font-weight:900;font-size:22px;color:var(--charcoal);text-decoration:none}
+.logo .spark{color:var(--ember)}
+.logo small{display:block;font-size:9px;font-weight:700;letter-spacing:.34em;color:var(--teal-text)}
+nav.gnav{display:flex;gap:28px;font-weight:700;font-size:14px}
+nav.gnav a{color:var(--charcoal);text-decoration:none}
+nav.gnav a:hover{color:var(--teal-text)}
+.hd-cta{background:var(--ember);color:var(--charcoal);font-weight:900;font-size:14px;padding:10px 22px;border-radius:999px;text-decoration:none;white-space:nowrap}
+.hd-cta:hover{filter:brightness(1.06)}
+.hd-cta:focus-visible,.btn-primary:focus-visible,.btn-ghost:focus-visible{outline:3px solid var(--charcoal);outline-offset:3px}
+.btn-primary:hover{filter:brightness(1.05);transform:translateY(-1px)}
+.btn-primary:active{transform:translateY(1px);box-shadow:0 2px 0 rgba(54,54,54,.18)}
+.btn-ghost:hover{background:var(--teal-pale)}
+.btn-primary,.btn-ghost,.hd-cta{transition:transform .15s cubic-bezier(0,0,.2,1),filter .15s cubic-bezier(0,0,.2,1),background .15s cubic-bezier(0,0,.2,1)}
+@media(prefers-reduced-motion:reduce){.btn-primary,.btn-ghost,.hd-cta{transition:none}.btn-primary:hover{transform:none}}
+
+/* ===== Hero ===== */
+.hero{background:linear-gradient(115deg,var(--teal-pale) 0 58%,var(--white) 58%);padding:88px 0 72px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:7fr 5fr;gap:48px;align-items:center}
+.hero .badge{display:inline-block;background:var(--charcoal);color:var(--white);font-size:12px;font-weight:700;letter-spacing:.12em;padding:6px 16px;border-radius:999px;margin-bottom:22px}
+.hero h1{font-family:var(--disp);font-weight:900;font-size:54px;line-height:1.35;color:var(--charcoal)}
+.hero h1 .t{color:var(--teal-dark)}
+.hero .lead{margin-top:22px;font-size:17px;font-weight:500;max-width:34em}
+.hero .cta-row{margin-top:36px;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.btn-primary{background:var(--ember);color:var(--charcoal);font-weight:900;font-size:17px;padding:18px 40px;border-radius:999px;text-decoration:none;box-shadow:0 4px 0 rgba(54,54,54,.18)}
+.btn-primary small{display:block;font-size:11px;font-weight:700}
+.btn-ghost{border:2px solid var(--teal);color:var(--teal-text);font-weight:700;font-size:15px;padding:14px 30px;border-radius:999px;text-decoration:none;background:var(--white)}
+.hero .proof{margin-top:30px;display:flex;gap:22px;flex-wrap:wrap;font-size:12.5px;font-weight:700;color:var(--charcoal)}
+.hero .proof span{border-left:3px solid var(--teal);padding-left:10px;line-height:1.5}
+.hero-fig{background:var(--white);border:1px solid var(--line);padding:30px 26px}
+.hero-fig .cap{font-size:12px;font-weight:700;letter-spacing:.18em;color:var(--teal-text);margin-bottom:18px}
+.tri{display:grid;gap:10px}
+.tri .node{border:2px solid var(--teal);padding:12px 16px;font-weight:900;font-size:15px;color:var(--charcoal);background:var(--teal-pale)}
+.tri .x{justify-self:center;font-family:var(--disp);font-weight:900;color:var(--ember);font-size:20px;line-height:1}
+.tri .eq{margin-top:8px;background:var(--charcoal);color:var(--white);padding:14px 16px;font-weight:900;text-align:center}
+.tri .eq b{color:var(--ember)}
+
+/* ===== 課題 ===== */
+.sec{padding:84px 0}
+.sec.alt{background:var(--teal-pale)}
+.pains{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:860px}
+.pain{display:flex;gap:14px;align-items:flex-start;background:var(--white);border:1px solid var(--line);padding:18px 20px;font-weight:500}
+.pain .chk{flex:none;width:26px;height:26px;border:2.5px solid var(--teal);position:relative;margin-top:4px}
+.pain .chk::after{content:"";position:absolute;left:5px;top:1px;width:9px;height:15px;border-right:3.5px solid var(--ember);border-bottom:3.5px solid var(--ember);transform:rotate(40deg)}
+.pains-close{margin-top:30px;font-family:var(--disp);font-weight:700;font-size:20px;color:var(--charcoal)}
+.pains-close b{color:var(--teal-text)}
+
+/* ===== 統合最適化 ===== */
+.method{display:grid;grid-template-columns:5fr 7fr;gap:48px;align-items:start}
+.method p.note{font-weight:500}
+.pillars{display:grid;gap:0;border:1px solid var(--line)}
+.pillar{display:grid;grid-template-columns:96px 1fr;border-bottom:1px solid var(--line);background:var(--white)}
+.pillar:last-child{border-bottom:none}
+.pillar .ic{display:flex;align-items:center;justify-content:center;font-family:var(--disp);font-weight:900;font-size:18px;color:var(--white);background:var(--teal)}
+.pillar:nth-child(2) .ic{background:var(--teal-dark)}
+.pillar:nth-child(3) .ic{background:var(--charcoal)}
+.pillar .tx{padding:20px 24px}
+.pillar .tx h3{font-family:var(--disp);font-size:19px;font-weight:900;color:var(--charcoal);margin-bottom:4px}
+.pillar .tx p{font-size:14.5px}
+.method-eq{margin-top:20px;background:var(--charcoal);color:var(--white);padding:18px 24px;font-weight:900;font-size:17px;text-align:center}
+.method-eq b{color:var(--ember)}
+
+/* ===== Seven Steps ===== */
+.steps{counter-reset:step;display:grid;gap:0;border-left:3px solid var(--teal);margin-left:8px;max-width:880px}
+.step{position:relative;padding:22px 0 22px 56px}
+.step::before{counter-increment:step;content:counter(step);position:absolute;left:-23px;top:24px;width:44px;height:44px;border-radius:50%;background:var(--white);border:3px solid var(--teal);display:flex;align-items:center;justify-content:center;font-family:var(--disp);font-weight:900;font-size:19px;color:var(--teal-dark)}
+.step h3{font-family:var(--disp);font-size:20px;font-weight:900;color:var(--charcoal)}
+.step p{font-size:14.5px;max-width:42em}
+.step.fire::before{background:var(--ember);border-color:var(--ember);color:var(--charcoal)}
+.step.fire h3 .tag{display:inline-block;background:var(--ember);color:var(--charcoal);font-family:var(--body);font-size:11px;font-weight:900;letter-spacing:.1em;padding:3px 10px;border-radius:999px;vertical-align:4px;margin-left:10px}
+.steps-note{margin-top:26px;font-size:14px;font-weight:700;color:var(--charcoal);border-left:4px solid var(--ember);padding-left:14px;max-width:46em}
+
+/* ===== 焚き火戦略 ===== */
+.takibi{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);max-width:960px}
+.takibi .col{padding:34px 32px}
+.takibi .col.hanabi{background:var(--white);color:var(--grey-mute)}
+.takibi .col.fire{background:var(--charcoal);color:var(--white)}
+.takibi h3{font-family:var(--disp);font-size:22px;font-weight:900;margin-bottom:18px}
+.takibi .hanabi h3{color:var(--grey-mute)}
+.takibi .fire h3{color:var(--ember)}
+.takibi ul{list-style:none;display:grid;gap:12px;font-size:14.5px}
+.takibi li{padding-left:18px;position:relative}
+.takibi .hanabi li::before{content:"×";position:absolute;left:0;font-weight:900}
+.takibi .fire li::before{content:"●";position:absolute;left:0;color:var(--ember);font-size:10px;top:7px}
+.takibi-lead{max-width:46em;margin-bottom:34px;font-weight:500}
+.takibi-copy{margin-top:30px;font-family:var(--disp);font-weight:900;font-size:24px;color:var(--charcoal)}
+.takibi-copy b{color:var(--ember)}
+
+/* ===== 業種別サービス ===== */
+.industries{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.ind{background:var(--white);border:1px solid var(--line);border-top:4px solid var(--teal)}
+.ind:nth-child(2){border-top-color:var(--teal-dark)}
+.ind:nth-child(3){border-top-color:var(--ember)}
+.ind:nth-child(4){border-top-color:var(--charcoal)}
+.ind .hd2{padding:18px 24px 0}
+.ind h3{font-family:var(--disp);font-size:20px;font-weight:900;color:var(--charcoal)}
+.ind ul{list-style:none;padding:14px 24px 22px;display:grid;gap:8px;font-size:14.5px}
+.ind li{padding-left:16px;position:relative}
+.ind li::before{content:"";position:absolute;left:0;top:11px;width:8px;height:2.5px;background:var(--teal)}
+
+/* ===== 信頼 ===== */
+.trust{display:grid;grid-template-columns:7fr 5fr;gap:44px;align-items:start}
+.creds{display:grid;gap:14px}
+.cred{display:grid;grid-template-columns:120px 1fr;background:var(--white);border:1px solid var(--line)}
+.cred .k{background:var(--teal-pale);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:13px;color:var(--teal-dark);padding:14px;text-align:center;line-height:1.5}
+.cred .v{padding:16px 20px;font-size:14.5px;font-weight:500}
+.dxbox{background:var(--charcoal);color:var(--white);padding:30px 28px}
+.dxbox h3{font-family:var(--disp);font-size:20px;font-weight:900;color:var(--ember);margin-bottom:12px}
+.dxbox p{font-size:14px;opacity:.92}
+.dxbox .ph{margin-top:18px;border:1.5px dashed rgba(255,255,255,.4);padding:14px;text-align:center;font-size:12px;opacity:.7}
+
+/* ===== CTA ===== */
+.cta-final{background:linear-gradient(180deg,var(--teal) 0%,var(--teal-dark) 100%);color:var(--white);text-align:center;padding:84px 0}
+.cta-final .limit{display:inline-block;background:var(--ember);color:var(--charcoal);font-weight:900;font-size:14px;letter-spacing:.08em;padding:8px 24px;border-radius:999px;margin-bottom:24px}
+.cta-final h2{font-family:var(--disp);font-weight:900;font-size:38px;line-height:1.5}
+.cta-final p{margin-top:14px;font-weight:500;opacity:.95}
+.cta-final .btn-primary{display:inline-block;margin-top:34px;font-size:19px;padding:20px 56px}
+
+/* ===== Footer ===== */
+footer{background:var(--charcoal);color:var(--grey-foot);padding:48px 0 36px;font-size:13px}
+footer .cols{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap}
+footer .logo{color:var(--white);font-size:18px}
+footer nav{display:flex;gap:22px;flex-wrap:wrap}
+footer a{color:var(--grey-foot);text-decoration:none}
+footer a:hover{color:var(--white)}
+footer .copy{margin-top:30px;border-top:1px solid var(--grey-foot-line);padding-top:18px;font-size:11.5px;color:var(--grey-soft)}
+
+/* ===== Responsive ===== */
+@media(max-width:900px){
+  .hero .wrap,.method,.trust{grid-template-columns:1fr}
+  .hero{background:var(--teal-pale);padding:56px 0}
+  .hero h1{font-size:38px}
+  .pains,.industries,.takibi{grid-template-columns:1fr}
+  nav.gnav{display:none}
+  .axis h2{font-size:25px}
+  .axis .no{font-size:46px}
+  .cta-final h2{font-size:27px}
+}
+@media(max-width:480px){
+  .hero h1{font-size:30px}
+  .btn-primary{font-size:15px;padding:16px 28px}
+  .cred{grid-template-columns:1fr}
+  .cred .k{padding:8px}
+  .sec{padding:56px 0}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hd">
+    <a class="logo" href="#">appli bank<span class="spark">✦</span><small>TOKYO JAPAN</small></a>
+    <nav class="gnav">
+      <a href="#method">統合最適化</a>
+      <a href="#steps">Seven Steps</a>
+      <a href="#takibi">焚き火戦略</a>
+      <a href="#service">サービス</a>
+      <a href="#trust">信頼の証</a>
+    </nav>
+    <a class="hd-cta" href="#cta">無料コンサル［月5件限定］</a>
+  </div>
+</header>
+
+<!-- 01 Hero -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="badge">建設業専門 経営コンサルティング × AI</span>
+      <h1>建てる会社を、<br><span class="t">強くする。</span></h1>
+      <p class="lead">海外5カ国で建て、黒字化させてきた実務家が、人材育成 × DX推進 × 収益改善を三位一体で最適化。AIを現場に灯し、利益体質の会社へ。</p>
+      <div class="cta-row">
+        <a class="btn-primary" href="#cta">無料コンサルティングに申し込む<small>毎月5社限定・オンライン可</small></a>
+        <a class="btn-ghost" href="#method">アプリバンクの方法論を見る</a>
+      </div>
+      <div class="proof">
+        <span>経済産業省<br>DX認定事業者</span>
+        <span>海外5カ国<br>建設プロジェクト経験</span>
+        <span>建設業コンサル<br>20年</span>
+        <span>JapanAI<br>正規代理店</span>
+      </div>
+    </div>
+    <aside class="hero-fig">
+      <p class="cap">INTEGRATED OPTIMIZATION ― 統合最適化</p>
+      <div class="tri">
+        <div class="node">人材育成 ― 採用・育成・定着</div>
+        <div class="x">×</div>
+        <div class="node">DX推進 ― 生成AI・現場の見える化</div>
+        <div class="x">×</div>
+        <div class="node">収益改善 ― 原価・実行予算・工程</div>
+        <div class="eq">＝ <b>利益体質</b>の建設会社へ</div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- 02 課題 -->
+<section class="sec">
+  <div class="wrap">
+    <div class="axis"><h2>社長、こんなお悩みを抱えていませんか</h2></div>
+    <div class="pains">
+      <div class="pain"><span class="chk"></span>利益が出ない。どの現場が儲かっているのか分からない</div>
+      <div class="pain"><span class="chk"></span>若手が採れない、育たない、辞めていく</div>
+      <div class="pain"><span class="chk"></span>DXやAIと言われても、何から手を付ければいいか分からない</div>
+      <div class="pain"><span class="chk"></span>紙とExcelとFAXから抜け出せない</div>
+      <div class="pain"><span class="chk"></span>大手コンサルに頼んだが、評論だけで現場が変わらなかった</div>
+    </div>
+    <p class="pains-close">一つでも当てはまったら――<b>部分最適ではなく、統合最適化</b>の出番です。</p>
+  </div>
+</section>
+
+<!-- 03 統合最適化 -->
+<section class="sec alt" id="method">
+  <div class="wrap">
+    <div class="axis"><h2>統合最適化メソッド</h2></div>
+    <div class="method">
+      <p class="note">人材だけ、DXだけ、コスト削減だけ――単発の施策は必ず元に戻ります。アプリバンクは3つの軸を<b>同時に・つなげて</b>動かすことで、相乗効果を生み、戻らない変化をつくります。</p>
+      <div>
+        <div class="pillars">
+          <div class="pillar"><div class="ic">人材</div><div class="tx"><h3>人材育成</h3><p>採用戦略・多能工化・技術継承。シニア人材×AIで、経験を会社の資産に変える。</p></div></div>
+          <div class="pillar"><div class="ic">DX</div><div class="tx"><h3>DX推進</h3><p>生成AI・RAG・BIM・現場の見える化。職人が使えるスモールスタート設計。</p></div></div>
+          <div class="pillar"><div class="ic">収益</div><div class="tx"><h3>収益改善</h3><p>案件別原価・実行予算・工程改善。どんぶり勘定から、数字で語れる経営へ。</p></div></div>
+        </div>
+        <div class="method-eq">3軸の掛け算が、<b>単発施策の何倍も</b>効く。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 Seven Steps -->
+<section class="sec" id="steps">
+  <div class="wrap">
+    <div class="axis"><h2>経営改善の7段階</h2></div>
+    <div class="steps">
+      <div class="step fire"><h3>AI現状診断<span class="tag">AIで着火</span></h3><p>生成AIで経営・現場のデータを収集・可視化。従来の「人手ヒアリング」ではなく、AIで即、見えない溝を高速診断。</p></div>
+      <div class="step"><h3>課題の構造化</h3><p>散らばった課題を因果でつなぎ、止血点＝最初に手を打つべき1点を特定します。</p></div>
+      <div class="step"><h3>全体最適の設計</h3><p>人材×DX×収益の3軸で改善ロードマップを設計。部分最適の罠を避けます。</p></div>
+      <div class="step"><h3>経営者コミット</h3><p>変革は社長の言葉から。経営者自身が旗を立てるための材料と覚悟を揃えます。</p></div>
+      <div class="step"><h3>現場を味方に</h3><p>「楽になった」という小さな成功体験を現場につくり、抵抗を推進力に変えます。</p></div>
+      <div class="step"><h3>DX・AI実装</h3><p>生成AI・業務ツールを現場に実装。使われないシステムは入れません。</p></div>
+      <div class="step"><h3>定着・自走</h3><p>担当が代わっても回る「業務の型」として定着。御社だけで火を焚ける状態がゴールです。</p></div>
+    </div>
+    <p class="steps-note">起点は「AIによる現状把握」。入口からAIを使う診断は、人手ヒアリング型の従来コンサルとの決定的な違いです。</p>
+  </div>
+</section>
+
+<!-- 05 焚き火戦略 -->
+<section class="sec alt" id="takibi">
+  <div class="wrap">
+    <div class="axis"><h2>焚き火戦略 ― AIの浸透のさせ方</h2></div>
+    <p class="takibi-lead">建設業のDX失敗の典型は、全社一括導入の「花火」。打ち上げた瞬間は華やかでも、誰も薪をくべず、灰だけが残ります。アプリバンクは小さく確実に火を灯し、隣の現場へ燃え移らせる。</p>
+    <div class="takibi">
+      <div class="col hanabi">
+        <h3>花火型のDX導入</h3>
+        <ul>
+          <li>全社一括・トップダウンの大号令</li>
+          <li>一瞬注目されて、燃え尽きる</li>
+          <li>導入して終わり。誰も薪をくべない</li>
+          <li>残るのは灰 ―「高い金で入れたのに誰も使わない」</li>
+        </ul>
+      </div>
+      <div class="col fire">
+        <h3>焚き火型のAI浸透</h3>
+        <ul>
+          <li>一現場・一業務から、小さく確実に着火</li>
+          <li>「楽になった」の温かさに、人が自然に集まる</li>
+          <li>伴走で薪をくべ続ける（FDE＝導入後も付き添う）</li>
+          <li>火が火を呼ぶ ― 成功体験が隣の現場へ燃え移る</li>
+          <li>最後は、御社自身が火を焚けるように</li>
+        </ul>
+      </div>
+    </div>
+    <p class="takibi-copy">AIは、打ち上げない。<b>灯し続ける。</b></p>
+  </div>
+</section>
+
+<!-- 06 業種別サービス -->
+<section class="sec" id="service">
+  <div class="wrap">
+    <div class="axis"><h2>業種別コンサルティング</h2></div>
+    <div class="industries">
+      <div class="ind"><div class="hd2"><h3>建設業・ゼネコン</h3></div>
+        <ul><li>中期経営計画・事業承継・経審対策</li><li>生成AI業務活用・情報基盤（RAG）構築・BIM導入伴走</li><li>原価・実行予算・工程改善</li></ul></div>
+      <div class="ind"><div class="hd2"><h3>プラント・EPC</h3></div>
+        <ul><li>大型案件のリスク管理・契約／サブコン交渉設計</li><li>設計ドキュメントのAIナレッジ化・技術継承</li><li>採算管理・O&amp;Mを含む収益設計（FDE）</li></ul></div>
+      <div class="ind"><div class="hd2"><h3>設備工事</h3></div>
+        <ul><li>多能工化・人材戦略</li><li>DX導入支援 ― ペーパーレス・現場情報共有の伴走</li><li>業務プロセス改革・品質向上</li></ul></div>
+      <div class="ind"><div class="hd2"><h3>建材・専門商社</h3></div>
+        <ul><li>営業戦略・販路拡大</li><li>CRM／SFAの見える化・商談データ活用</li><li>粗利・与信・在庫最適化</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 信頼 -->
+<section class="sec alt" id="trust">
+  <div class="wrap">
+    <div class="axis"><h2>信頼の証</h2></div>
+    <div class="trust">
+      <div class="creds">
+        <div class="cred"><div class="k">国の認定</div><div class="v">経済産業省「DX認定事業者」。大手上場企業も取得する国の基準を、建設特化コンサルとしてクリア。</div></div>
+        <div class="cred"><div class="k">専門家認定</div><div class="v">ビザスク／ミーミル／アーチーズ 認定エキスパート。第三者プラットフォームから指名を受けるスポットコンサル実績。</div></div>
+        <div class="cred"><div class="k">海外実績</div><div class="v">海外5カ国での建設プロジェクト経験。500億円規模EPCの現場で培った実務知。</div></div>
+        <div class="cred"><div class="k">AI実装力</div><div class="v">JapanAI 正規代理店。自社もAI経営チームで運営する「Drink Your Own Champagne」の実証実験体。</div></div>
+      </div>
+      <div class="dxbox">
+        <h3>DX認定事業者とは</h3>
+        <p>経済産業省が「DX推進の準備が整った事業者」と認定する制度。税制優遇・補助金加点の対象にもなる国のお墨付きです。</p>
+        <p style="margin-top:10px">建設業特化の経営コンサルでの取得は希少。私たちは「勧める側」ではなく「自ら実践する側」です。</p>
+        <div class="ph">［DX認定ロゴ：規約準拠のため実装時に正規データを配置］</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 CTA -->
+<section class="cta-final" id="cta">
+  <div class="wrap">
+    <span class="limit">毎月5社限定</span>
+    <h2>まず、御社の「現在地」を<br>AIと一緒に見てみませんか。</h2>
+    <p>無料コンサルティング（60分・オンライン可）。売り込みはしません。<br>Seven Stepsの第一歩「AI現状診断」の入口を体験いただけます。</p>
+    <a class="btn-primary" href="#">無料コンサルティングに申し込む</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <p class="logo">appli bank<span style="color:var(--ember)">✦</span></p>
+        <p style="margin-top:10px;max-width:34em">株式会社アプリバンク ― 建設業専門の経営コンサルティング。人材育成×DX推進×収益改善の統合最適化。</p>
+      </div>
+      <nav>
+        <a href="#">会社概要</a>
+        <a href="#">コンサルサービス</a>
+        <a href="#">コラム</a>
+        <a href="#">個人情報保護方針</a>
+        <a href="#">特定商取引法に基づく表記</a>
+        <a href="#">お問い合わせ</a>
+      </nav>
+    </div>
+    <p class="copy">© 2014-2026 AppliBank Inc. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
